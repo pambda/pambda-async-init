@@ -24,8 +24,6 @@ test('test', t => {
 
     t.error(err);
 
-    t.deepEqual(steps, [1, 2, 3]);
-
     return next => (event, context, callback) => {
       steps.push(4);
 
@@ -75,7 +73,7 @@ test('test', t => {
         },
       });
 
-      t.deepEqual(steps, [1, 2, 3, 4, 5, 6, 4, 5, 7]);
+      t.deepEqual(steps, [1, 2, 3, 4, 5, 6, 3, 4, 5, 7]);
     });
   });
 });
