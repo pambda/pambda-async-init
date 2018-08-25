@@ -1,6 +1,6 @@
 {
   "name": "pambda-async-init",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Async initializer",
   "author": "Kengo Nakatsuka <kengo.nakatsuka@gmail.com>",
   "bugs": {
